@@ -1,0 +1,74 @@
+/* Carers Portal palette — mirrors src/react/src/styles/landing.css (--lp-*) */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap");
+
+:root {
+  --cp-burgundy:      #6B2C39;
+  --cp-burgundy-deep: #5A2530;
+  --cp-ochre:         #C8923D;
+  --cp-light-ochre:   #E8C868;
+  --cp-cream:         #F5EDE8;
+  --cp-cream-soft:    #FBF6F1;
+  --cp-ink:           #2A1A1F;
+  --cp-ink-soft:      #5A4A4F;
+}
+
+/* Light: burgundy chrome, ochre accents, cream page */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        var(--cp-burgundy);
+  --md-primary-fg-color--light: #8A3F4E;
+  --md-primary-fg-color--dark:  var(--cp-burgundy-deep);
+  --md-primary-bg-color:        var(--cp-cream);
+  --md-primary-bg-color--light: var(--cp-cream-soft);
+
+  --md-accent-fg-color:         var(--cp-ochre);
+  --md-accent-fg-color--transparent: rgba(200, 146, 61, 0.12);
+  --md-accent-bg-color:         var(--cp-ink);
+
+  --md-default-bg-color:        var(--cp-cream-soft);
+  --md-default-fg-color:        var(--cp-ink);
+  --md-default-fg-color--light: var(--cp-ink-soft);
+  --md-typeset-a-color:         var(--cp-burgundy);
+  --md-code-bg-color:           #F1E6DE;
+  --md-footer-bg-color:         var(--cp-ink);
+  --md-footer-bg-color--dark:   #1F1216;
+}
+
+/* Dark: ink page, ochre as the primary so it stays readable on dark */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        var(--cp-burgundy-deep);
+  --md-primary-fg-color--light: var(--cp-burgundy);
+  --md-primary-fg-color--dark:  #3F1A22;
+  --md-primary-bg-color:        var(--cp-cream);
+
+  --md-accent-fg-color:         var(--cp-light-ochre);
+  --md-accent-fg-color--transparent: rgba(232, 200, 104, 0.14);
+
+  --md-default-bg-color:        #1F1216;
+  --md-default-fg-color:        var(--cp-cream);
+  --md-typeset-a-color:         var(--cp-light-ochre);
+  --md-code-bg-color:           #2E1D22;
+}
+
+/* Fraunces display face for headings, as on carersportal.me */
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-header__title {
+  font-family: Fraunces, Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Primary buttons in ochre with ink text (landing CTA treatment) */
+.md-typeset .md-button--primary {
+  background-color: var(--cp-ochre);
+  border-color: var(--cp-ochre);
+  color: var(--cp-ink);
+}
+.md-typeset .md-button--primary:hover {
+  background-color: var(--cp-light-ochre);
+  border-color: var(--cp-light-ochre);
+  color: var(--cp-ink);
+}
+
+/* Home-page cards pick up the ochre on hover */
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--cp-ochre);
+}
