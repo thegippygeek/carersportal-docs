@@ -1,0 +1,76 @@
+site_name: Carers Portal Help
+site_url: https://docs.carersportal.me/
+site_description: How-to guides for participants, families and support workers using Carers Portal.
+repo_url: https://github.com/thegippygeek/carersportal-docs
+repo_name: carersportal-docs
+edit_uri: edit/main/docs/
+copyright: "© 2026 The Gippy Geek trading as Carers Portal"
+
+theme:
+  name: material
+  language: en
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  font:
+    text: Manrope
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: deep orange
+      toggle: { icon: material/weather-night, name: Switch to dark mode }
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle: { icon: material/weather-sunny, name: Switch to light mode }
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - Sign in: account/sign-in.md
+      - Access is pending?: account/access-pending.md
+      - Try the demo: account/demo.md
+  - How do I…:
+      - Record a shift note: guides/shift-notes.md
+      - Log fluids, meals and bowel health: guides/daily-records.md
+      - Record a therapy session: guides/therapy.md
+      - See who is on shift: guides/roster.md
+  - For administrators:
+      - Invite a team member: admin/invite.md
+      - Roles and what they can see: admin/roles.md
+      - Reference lists (shift types, medications): admin/reference-data.md
+  - Get help:
+      - Report a problem: support/report-a-problem.md
+      - Suggest an improvement: support/suggest.md
+      - Privacy & terms: support/privacy.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc: { permalink: true }
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed: { alternate_style: true }
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: material/web
+      link: https://carersportal.me
+      name: Carers Portal
+    - icon: fontawesome/brands/github
+      link: https://github.com/thegippygeek/carersportal-docs/discussions
+      name: Ask a question

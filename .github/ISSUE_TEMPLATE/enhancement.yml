@@ -1,0 +1,27 @@
+name: Suggest an improvement
+description: An idea that would make Carers Portal better.
+title: "Idea: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: The situation, not the feature — "every morning I have to…" is more useful than "add a button that…".
+    validations: { required: true }
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to see?
+  - type: dropdown
+    id: who
+    attributes:
+      label: Who would this help most?
+      options: ["Participants and families", "Support workers", "Administrators", "Everyone"]
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: This suggestion contains no participant details.
+          required: true

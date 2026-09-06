@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/thegippygeek/carersportal-docs/discussions/new?category=q-a
+    about: "How do I…?" questions go here — answers become guide pages.
+  - name: Privacy or security concern
+    url: mailto:privacy@carersportal.me
+    about: Anything involving a participant's details. Never post those publicly.
+  - name: Read the help guides
+    url: https://docs.carersportal.me
+    about: Your question may already be answered.

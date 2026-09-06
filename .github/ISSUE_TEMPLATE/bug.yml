@@ -1,0 +1,49 @@
+name: Report a bug
+description: Something in Carers Portal is not working the way it should.
+title: "Bug: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. **This report is public** — please do not include any participant's name, date of birth, NDIS number or anything from a care record. If you need to share something sensitive, email privacy@carersportal.me instead.
+  - type: textarea
+    id: what
+    attributes:
+      label: What were you trying to do?
+      placeholder: "I was adding a fluid record from the shift note screen…"
+    validations: { required: true }
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations: { required: true }
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+      description: Include the exact wording of any error message.
+    validations: { required: true }
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where were you?
+      options: ["carersportal.me (the real portal)", "The demo", "Not sure"]
+    validations: { required: true }
+  - type: input
+    id: browser
+    attributes:
+      label: Device and browser
+      placeholder: "iPhone 15, Safari / Windows laptop, Chrome"
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Drag an image here. Cover any participant details first.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: This report contains no participant details.
+          required: true
