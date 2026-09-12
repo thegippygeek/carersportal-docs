@@ -1,0 +1,21 @@
+{#-
+  Theme-aware header logo (brand alignment).
+
+  Material's default logo partial renders a single `theme.logo` image, which
+  cannot switch per colour scheme. We render BOTH brand marks and let
+  extra.css show the right one for the active `data-md-color-scheme`
+  (burgundy mark on light, cream/ochre mark on dark) — matching
+  docs/brand-style-guide.md §1.
+-#}
+<img
+  src="{{ base_url }}/assets/carersportal-mark.svg"
+  alt="{{ config.site_name }}"
+  class="cp-logo cp-logo--light"
+  draggable="false"
+/>
+<img
+  src="{{ base_url }}/assets/carersportal-mark-on-dark.svg"
+  alt="{{ config.site_name }}"
+  class="cp-logo cp-logo--dark"
+  draggable="false"
+/>

@@ -9,8 +9,12 @@ copyright: "© 2026 The Gippy Geek trading as Carers Portal"
 theme:
   name: material
   language: en
-  logo: assets/logo.svg
-  favicon: assets/logo.svg
+  custom_dir: overrides
+  # The header logo is rendered by overrides/partials/logo.html so it can be
+  # theme-aware (burgundy mark on light, cream/ochre mark on dark). `favicon`
+  # stays the light mark — browser chrome has no dark-scheme signal here.
+  logo: assets/carersportal-mark.svg
+  favicon: assets/carersportal-mark.svg
   font:
     text: Manrope
     code: JetBrains Mono

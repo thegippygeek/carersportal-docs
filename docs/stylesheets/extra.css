@@ -1,18 +1,34 @@
-/* Carers Portal palette — mirrors src/react/src/styles/landing.css (--lp-*) */
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap");
+/* ============================================================
+   Carers Portal brand — MkDocs Material.
+
+   Source of truth: docs/brand-style-guide.md in the application repo
+   (thegippygeek/carersPortal). The palette also mirrors the app's
+   --lp-* tokens (src/react/src/styles/landing.css). Hexes are literal
+   here because this repo cannot import from the app repo; keep them in
+   step with the guide (§2 colour, §3 type, §4 shape).
+   ============================================================ */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap");
 
 :root {
+  /* Brand (guide §2) */
   --cp-burgundy:      #6B2C39;
   --cp-burgundy-deep: #5A2530;
   --cp-ochre:         #C8923D;
+  --cp-ochre-deep:    #8A5E1E; /* text-safe ochre (5.7:1 on white) */
   --cp-light-ochre:   #E8C868;
   --cp-cream:         #F5EDE8;
   --cp-cream-soft:    #FBF6F1;
   --cp-ink:           #2A1A1F;
   --cp-ink-soft:      #5A4A4F;
+
+  /* Status (guide §2 — the only place green/blue/red appear) */
+  --cp-success:     #2F6B3F;  --cp-success-bg: #EAF3EC;  --cp-success-bd: #BFDCC6;
+  --cp-warning:     #7A4E0B;  --cp-warning-bg: #FBF1DC;  --cp-warning-bd: #EBD59E;
+  --cp-info:        #2E5A80;  --cp-info-bg:    #E9F0F6;  --cp-info-bd:    #BFD3E4;
+  --cp-danger:      #B42318;  --cp-danger-bg:  #FBECEA;  --cp-danger-bd:  #F0C2BC;
 }
 
-/* Light: burgundy chrome, ochre accents, cream page */
+/* Light: burgundy chrome, ochre accents, cream page (guide §2 proportions) */
 [data-md-color-scheme="default"] {
   --md-primary-fg-color:        var(--cp-burgundy);
   --md-primary-fg-color--light: #8A3F4E;
@@ -20,55 +36,171 @@
   --md-primary-bg-color:        var(--cp-cream);
   --md-primary-bg-color--light: var(--cp-cream-soft);
 
-  --md-accent-fg-color:         var(--cp-ochre);
+  --md-accent-fg-color:              var(--cp-ochre);
   --md-accent-fg-color--transparent: rgba(200, 146, 61, 0.12);
-  --md-accent-bg-color:         var(--cp-ink);
+  --md-accent-bg-color:              var(--cp-ink);
 
   --md-default-bg-color:        var(--cp-cream-soft);
   --md-default-fg-color:        var(--cp-ink);
   --md-default-fg-color--light: var(--cp-ink-soft);
+  /* Links use ochre-deep, never raw ochre, for body-text contrast (guide §2) */
   --md-typeset-a-color:         var(--cp-burgundy);
   --md-code-bg-color:           #F1E6DE;
   --md-footer-bg-color:         var(--cp-ink);
   --md-footer-bg-color--dark:   #1F1216;
 }
 
-/* Dark: ink page, ochre as the primary so it stays readable on dark */
+/* Dark: plum ground, ink surfaces, light-ochre primary, cream text.
+   Values from the guide §2 "Dark theme" table (not an inversion). */
 [data-md-color-scheme="slate"] {
   --md-primary-fg-color:        var(--cp-burgundy-deep);
   --md-primary-fg-color--light: var(--cp-burgundy);
   --md-primary-fg-color--dark:  #3F1A22;
   --md-primary-bg-color:        var(--cp-cream);
 
-  --md-accent-fg-color:         var(--cp-light-ochre);
+  --md-accent-fg-color:              var(--cp-light-ochre);
   --md-accent-fg-color--transparent: rgba(232, 200, 104, 0.14);
 
-  --md-default-bg-color:        #1F1216;
+  --md-default-bg-color:        #1E1216; /* guide --background */
   --md-default-fg-color:        var(--cp-cream);
+  --md-default-fg-color--light: #C9B8BE; /* guide --muted-foreground */
   --md-typeset-a-color:         var(--cp-light-ochre);
-  --md-code-bg-color:           #2E1D22;
+  --md-code-bg-color:           #2A1A1F; /* guide --card */
+  --md-footer-bg-color:         #1F1216;
 }
 
-/* Fraunces display face for headings, as on carersportal.me */
-.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-header__title {
-  font-family: Fraunces, Georgia, serif;
-  font-weight: 600;
-  letter-spacing: -0.01em;
+/* Light-theme header: a CREAM bar with burgundy text — matching the
+   carersportal.me landing nav (guide §2), not Material's default heavy
+   burgundy fill. Scoped to .md-header so the shared --md-primary-* tokens
+   (used by nav accents elsewhere) are left alone. The dark theme keeps its
+   deep-burgundy header, which reads correctly on the plum page. */
+[data-md-color-scheme="default"] .md-header {
+  background-color: var(--cp-cream);
+  color: var(--cp-burgundy);
+  border-bottom: 1px solid rgba(107, 44, 57, 0.12);
 }
-
-/* Primary buttons in ochre with ink text (landing CTA treatment) */
-.md-typeset .md-button--primary {
-  background-color: var(--cp-ochre);
-  border-color: var(--cp-ochre);
+[data-md-color-scheme="default"] .md-header__title,
+[data-md-color-scheme="default"] .md-header__button,
+[data-md-color-scheme="default"] .md-header__topic {
+  color: var(--cp-burgundy);
+}
+/* The search input sits in the header; keep it legible on cream */
+[data-md-color-scheme="default"] .md-search__input {
+  background-color: rgba(107, 44, 57, 0.06);
   color: var(--cp-ink);
+}
+[data-md-color-scheme="default"] .md-search__input::placeholder {
+  color: var(--cp-ink-soft);
+}
+
+/* Fraunces display face for headings, as on carersportal.me.
+   NEVER bold Fraunces (guide §3) — 400, letterspaced slightly tight. */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-nav__title,
+.md-header__title {
+  font-family: Fraunces, Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
+
+/* Theme-aware header logo (rendered by overrides/partials/logo.html).
+   Frozen-CSS is not a concern here — MkDocs Material compiles our
+   extra.css normally. Show one mark per active colour scheme. */
+/* Selectors are scoped under .md-logo so they out-specify Material's own
+   `.md-logo img { display: block }` (which otherwise forces BOTH marks
+   visible). Default scheme shows the light mark; slate shows the on-dark. */
+.md-logo img.cp-logo { height: 1.5rem; width: auto; }
+.md-logo img.cp-logo--dark { display: none; }
+[data-md-color-scheme="slate"] .md-logo img.cp-logo--light { display: none; }
+[data-md-color-scheme="slate"] .md-logo img.cp-logo--dark { display: block; }
+
+/* Primary buttons: burgundy fill, cream text — one per view (guide §5).
+   (The landing CTA-on-dark treatment is ochre-on-ink; in the docs the
+   primary action sits on cream, so burgundy fill is the correct variant.) */
+.md-typeset .md-button--primary {
+  background-color: var(--cp-burgundy);
+  border-color: var(--cp-burgundy);
+  color: var(--cp-cream);
 }
 .md-typeset .md-button--primary:hover {
-  background-color: var(--cp-light-ochre);
-  border-color: var(--cp-light-ochre);
-  color: var(--cp-ink);
+  background-color: var(--cp-burgundy-deep);
+  border-color: var(--cp-burgundy-deep);
+  color: var(--cp-cream);
 }
 
-/* Home-page cards pick up the ochre on hover */
+/* Home-page cards: 1px line, warm hover to line-strong (guide §4 flat elevation) */
+.md-typeset .grid.cards > ul > li { border-radius: 14px; }
 .md-typeset .grid.cards > ul > li:hover {
-  border-color: var(--cp-ochre);
+  border-color: rgba(107, 44, 57, 0.25);
 }
+
+/* ------------------------------------------------------------------
+   Admonitions mapped to the brand status palette (guide §2).
+   Material's note/info -> info; tip/success/check -> success;
+   warning/caution -> warning; danger/failure/error/bug -> danger.
+   Light values below; slate overrides follow.
+   ------------------------------------------------------------------ */
+.md-typeset .admonition.note,   .md-typeset details.note,
+.md-typeset .admonition.info,   .md-typeset details.info,
+.md-typeset .admonition.abstract, .md-typeset details.abstract {
+  border-color: var(--cp-info-bd);
+  background: var(--cp-info-bg);
+}
+.md-typeset .note > .admonition-title,   .md-typeset .note > summary,
+.md-typeset .info > .admonition-title,   .md-typeset .info > summary,
+.md-typeset .abstract > .admonition-title, .md-typeset .abstract > summary {
+  background: var(--cp-info-bg);
+  color: var(--cp-info);
+}
+
+.md-typeset .admonition.tip,     .md-typeset details.tip,
+.md-typeset .admonition.success, .md-typeset details.success,
+.md-typeset .admonition.check,   .md-typeset details.check {
+  border-color: var(--cp-success-bd);
+  background: var(--cp-success-bg);
+}
+.md-typeset .tip > .admonition-title,     .md-typeset .tip > summary,
+.md-typeset .success > .admonition-title, .md-typeset .success > summary,
+.md-typeset .check > .admonition-title,   .md-typeset .check > summary {
+  background: var(--cp-success-bg);
+  color: var(--cp-success);
+}
+
+.md-typeset .admonition.warning, .md-typeset details.warning,
+.md-typeset .admonition.caution, .md-typeset details.caution {
+  border-color: var(--cp-warning-bd);
+  background: var(--cp-warning-bg);
+}
+.md-typeset .warning > .admonition-title, .md-typeset .warning > summary,
+.md-typeset .caution > .admonition-title, .md-typeset .caution > summary {
+  background: var(--cp-warning-bg);
+  color: var(--cp-warning);
+}
+
+.md-typeset .admonition.danger,  .md-typeset details.danger,
+.md-typeset .admonition.failure, .md-typeset details.failure,
+.md-typeset .admonition.error,   .md-typeset details.error,
+.md-typeset .admonition.bug,     .md-typeset details.bug {
+  border-color: var(--cp-danger-bd);
+  background: var(--cp-danger-bg);
+}
+.md-typeset .danger > .admonition-title,  .md-typeset .danger > summary,
+.md-typeset .failure > .admonition-title, .md-typeset .failure > summary,
+.md-typeset .error > .admonition-title,   .md-typeset .error > summary,
+.md-typeset .bug > .admonition-title,     .md-typeset .bug > summary {
+  background: var(--cp-danger-bg);
+  color: var(--cp-danger);
+}
+
+/* Dark-theme status: lighter text on deep tints (guide §2 dark status row).
+   Tints are deep, text is the light variant, so contrast holds on plum. */
+[data-md-color-scheme="slate"] {
+  --cp-success-bg: #22301F; --cp-warning-bg: #3A2C12;
+  --cp-info-bg:    #1E2C3A; --cp-danger-bg:  #3B1A18;
+}
+[data-md-color-scheme="slate"] .note > .admonition-title,   [data-md-color-scheme="slate"] .info > .admonition-title,   [data-md-color-scheme="slate"] .abstract > .admonition-title { color: #9CC3E6; }
+[data-md-color-scheme="slate"] .tip > .admonition-title,    [data-md-color-scheme="slate"] .success > .admonition-title, [data-md-color-scheme="slate"] .check > .admonition-title { color: #8FCB9B; }
+[data-md-color-scheme="slate"] .warning > .admonition-title, [data-md-color-scheme="slate"] .caution > .admonition-title { color: #EBC77A; }
+[data-md-color-scheme="slate"] .danger > .admonition-title, [data-md-color-scheme="slate"] .failure > .admonition-title, [data-md-color-scheme="slate"] .error > .admonition-title, [data-md-color-scheme="slate"] .bug > .admonition-title { color: #F08A80; }

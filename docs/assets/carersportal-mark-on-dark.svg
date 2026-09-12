@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="Carers Portal">
+  <path d="M21.42,33.50 A33,33 0 0 1 67.49,22.01" fill="none" stroke="#F5EDE8" stroke-width="13" stroke-linecap="round"/>
+  <path d="M78.58,33.50 A33,33 0 0 1 65.49,79.14" fill="none" stroke="#F5EDE8" stroke-width="13" stroke-linecap="round"/>
+  <path d="M50.00,83.00 A33,33 0 0 1 17.02,48.85" fill="none" stroke="#F5EDE8" stroke-width="13" stroke-linecap="round"/>
+  <circle cx="50" cy="50" r="13" fill="#E8C868"/>
+</svg>
