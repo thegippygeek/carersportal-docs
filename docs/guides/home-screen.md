@@ -17,8 +17,8 @@ There is no app to download from an app store — Carers Portal runs in your pho
 
     1. Open Chrome and go to [carersportal.me](https://carersportal.me).
     2. Tap the **⋮** menu (three dots) at the top right.
-    3. Tap **Add to home screen**. If it asks, choose **Create shortcut**.
-    4. Tap **Add**, then either drag the icon where you want it or tap **Add** again to place it automatically.
+    3. Tap **Add to home screen** (on some phones this is called **Install app**). If it asks, choose **Install**.
+    4. Tap **Install** or **Add**, then either drag the icon where you want it or tap **Add** again to place it automatically.
 
     !!! tip "Using Samsung Internet?"
         Tap the **≡** menu at the bottom, then **Add page to** → **Home screen**.
