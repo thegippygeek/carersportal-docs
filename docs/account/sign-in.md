@@ -19,6 +19,12 @@ You can sign in two ways:
 
 The one your administrator added you with. Access is tied to the email address, so `jo@example.com` and `jo.smith@example.com` are different people to the portal. If you are not sure, ask your administrator — see [Access is pending?](access-pending.md).
 
-## Staying signed in
+## Signing out
 
-The portal keeps you signed in on that device until you choose **Sign out** from the menu, or until you have been away for a long time. On a shared device, always sign out.
+When you choose **Sign out** from the menu, you are signed out securely:
+
+- You are signed out in every tab and window of that browser, not just the one you used.
+- Your session is ended, so it cannot be reused. Reloading the page does not sign you back in.
+- The next person to use the device has to sign in with their own account.
+
+On a shared device, always sign out when you finish.
