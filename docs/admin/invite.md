@@ -7,8 +7,8 @@ Access to a participant's records is granted **by you**, per person, per care te
 3. Choose **Invite**, enter the email, choose a [role](roles.md), and confirm.
 4. Tell them they can now sign in — if they had already tried, they just choose **Check again** on the *access is pending* screen.
 
-!!! info "Already in another organisation?"
-    That is fine — invite the email they already sign in with. They keep one sign-in and choose between organisations; see [Work in more than one organisation](../account/organisations.md).
+!!! info "Already supporting someone else?"
+    That is fine — invite the email they already sign in with. They keep one sign-in and choose whose records to work in; see [Support more than one person](../account/people-you-support.md).
 
 !!! warning "Email addresses must match exactly"
     `jo@example.com` and `Jo@Example.com` match; `jo@example.com` and `jo.smith@example.com` do not.
