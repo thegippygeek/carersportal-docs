@@ -48,6 +48,7 @@ draft_docs: |
 
 nav:
   - Home: index.md
+  - What's new: releases/index.md
   - Getting started:
       - Sign in: account/sign-in.md
       - Access is pending?: account/access-pending.md
@@ -66,6 +67,25 @@ nav:
       - Report a problem: support/report-a-problem.md
       - Suggest an improvement: support/suggest.md
       - Privacy & terms: support/privacy.md
+
+# Releases ("What's new"): Material's built-in blog plugin. One Markdown file
+# per release under docs/releases/posts/. Declaring `plugins:` replaces the
+# default list, so `search` must be listed explicitly.
+plugins:
+  - search
+  - blog:
+      blog_dir: releases
+      blog_toc: true
+      authors: false
+      post_url_format: "{slug}"
+      post_date_format: long
+      post_readtime: false
+      archive_name: By month
+      categories_name: By type
+      categories_allowed:
+        - New feature
+        - Improvement
+        - Fix
 
 markdown_extensions:
   - admonition

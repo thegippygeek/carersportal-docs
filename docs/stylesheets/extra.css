@@ -204,3 +204,10 @@
 [data-md-color-scheme="slate"] .tip > .admonition-title,    [data-md-color-scheme="slate"] .success > .admonition-title, [data-md-color-scheme="slate"] .check > .admonition-title { color: #8FCB9B; }
 [data-md-color-scheme="slate"] .warning > .admonition-title, [data-md-color-scheme="slate"] .caution > .admonition-title { color: #EBC77A; }
 [data-md-color-scheme="slate"] .danger > .admonition-title, [data-md-color-scheme="slate"] .failure > .admonition-title, [data-md-color-scheme="slate"] .error > .admonition-title, [data-md-color-scheme="slate"] .bug > .admonition-title { color: #F08A80; }
+
+/* Release-post media: a light and a dark rendering of the same clip; show the
+   one that matches the active scheme, like the header logo above. */
+.cp-release-media { display: block; width: 100%; max-width: 30rem; height: auto; margin: 1.5em auto; border-radius: 0.6rem; }
+.cp-release-media--dark { display: none; }
+[data-md-color-scheme="slate"] .cp-release-media--light { display: none; }
+[data-md-color-scheme="slate"] .cp-release-media--dark { display: block; }
