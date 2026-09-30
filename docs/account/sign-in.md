@@ -19,17 +19,12 @@ You can sign in two ways:
 
 The one your administrator added you with. Access is tied to the email address, so `jo@example.com` and `jo.smith@example.com` are different people to the portal. If you are not sure, ask your administrator — see [Access is pending?](access-pending.md).
 
-## Staying signed in
+## Signing out
 
-The portal keeps you signed in on that device until you choose **Sign out** from the menu, or until you have been away for a long time. On a shared device, always sign out.
+When you choose **Sign out** from the menu, you are signed out securely:
 
-Signing out in one tab or window signs you out in all of them in that browser. Reloading the page afterwards does not sign you back in.
+- You are signed out in every tab and window of that browser, not just the one you used.
+- Your session is ended, so it cannot be reused. Reloading the page does not sign you back in.
+- The next person to use the device has to sign in with their own account.
 
-## One account per browser
-
-A browser holds one signed-in account at a time, shared by all of its tabs and windows. If you sign in as a different account in another tab, the tabs already open reload as that account. This way a tab never saves records under a different name from the one it shows.
-
-To use two accounts at once, for example your own and a test or administrator account, open the second one in a **private window** (Chrome: *New Incognito window*; Safari and Firefox: *New Private Window*) or in a separate browser profile.
-
-!!! tip "Supporting more than one person?"
-    You don't need a second account for that. One account can support several people. Switch between them from the **Supporting** menu; see [Support more than one person](people-you-support.md).
+On a shared device, always sign out when you finish.
