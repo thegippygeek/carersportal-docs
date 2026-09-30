@@ -22,3 +22,14 @@ The one your administrator added you with. Access is tied to the email address, 
 ## Staying signed in
 
 The portal keeps you signed in on that device until you choose **Sign out** from the menu, or until you have been away for a long time. On a shared device, always sign out.
+
+Signing out in one tab or window signs you out in all of them in that browser. Reloading the page afterwards does not sign you back in.
+
+## One account per browser
+
+A browser holds one signed-in account at a time, shared by all of its tabs and windows. If you sign in as a different account in another tab, the tabs already open reload as that account. This way a tab never saves records under a different name from the one it shows.
+
+To use two accounts at once, for example your own and a test or administrator account, open the second one in a **private window** (Chrome: *New Incognito window*; Safari and Firefox: *New Private Window*) or in a separate browser profile.
+
+!!! tip "Supporting more than one person?"
+    You don't need a second account for that. One account can support several people. Switch between them from the **Supporting** menu; see [Support more than one person](people-you-support.md).
