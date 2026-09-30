@@ -52,6 +52,7 @@ nav:
       - Sign in: account/sign-in.md
       - Access is pending?: account/access-pending.md
       - Try the demo: account/demo.md
+      - Work in more than one organisation: account/organisations.md
   - How do I…:
       - Record a shift note: guides/shift-notes.md
       - Log fluids, meals and bowel health: guides/daily-records.md
