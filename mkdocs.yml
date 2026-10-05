@@ -62,6 +62,8 @@ nav:
       - Invite a team member: admin/invite.md
       - Roles and what they can see: admin/roles.md
       - Reference lists (shift types, medications): admin/reference-data.md
+  - Plans & billing:
+      - Plans and seats: billing/plans-and-seats.md
   - Get help:
       - Report a problem: support/report-a-problem.md
       - Suggest an improvement: support/suggest.md
