@@ -23,3 +23,8 @@ On Basic, **Admin → Users** and **Admin → Billing** show where you stand, fo
 
 !!! info "Standard has no limit"
     On Standard nothing is counted against you. You can invite as many family members and workers as you need.
+
+## Next steps
+
+- [What happens at the user limit](user-limit.md) explains what you can and cannot do when Basic is full.
+- [Change your plan](change-plan.md) shows how to move between Basic and Standard.

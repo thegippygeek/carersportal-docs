@@ -64,6 +64,8 @@ nav:
       - Reference lists (shift types, medications): admin/reference-data.md
   - Plans & billing:
       - Plans and seats: billing/plans-and-seats.md
+      - What happens at the user limit: billing/user-limit.md
+      - Change your plan: billing/change-plan.md
   - Get help:
       - Report a problem: support/report-a-problem.md
       - Suggest an improvement: support/suggest.md
