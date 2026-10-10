@@ -2,7 +2,7 @@
 
 The **Roster** shows who is working with the participant, and when. Administrators plan it. Everyone else can read it, and sees their own shifts first.
 
-This page is for administrators. Support workers and family members will want My shifts, which is covered once the rest of this section is published.
+This page is for administrators. Support workers and family members will want [My shifts](my-shifts.md).
 
 ## The Week view
 
@@ -12,7 +12,7 @@ Open **Roster**. As an administrator you land on **Week**, a Monday to Sunday gr
 - **This week** jumps back to the current week.
 - Cancelled shifts are hidden unless you switch on **Show cancelled shifts and appointments**. A line beside the switch says how many are hidden.
 
-The other tabs are **Templates** (for shifts that repeat), **My shifts** and **Missing notes**.
+The other tabs are **Templates** (for [shifts that repeat](templates.md)), **My shifts** and **Missing notes** (see [Link a shift note to your shift](note-linking.md)).
 
 ## Add a shift
 
@@ -29,7 +29,7 @@ If the end time is earlier than the start time, the shift ends the next day. The
 
 ### Open shifts
 
-Leave **Workers** empty and the shift is kept open: it is on the roster, but nobody is on it yet. Open shifts are highlighted so they are easy to find.
+Leave **Workers** empty and the shift is kept open: it is on the roster, but nobody is on it yet. Open shifts are highlighted so they are easy to find. See [Coverage and open shifts](coverage.md).
 
 ### Two places at once
 
@@ -41,7 +41,7 @@ Select a shift in the grid to open it. You can change the type, date, times, wor
 
 Once a shift has started, its date, times and type are locked. You can still change the workers and the note, and the change is recorded in the shift's history.
 
-If the shift belongs to a repeating pattern, you are asked whether the change is for this shift only or for this and all following shifts.
+If the shift belongs to a repeating pattern, you are asked whether the change is for this shift only or for this and all following shifts. See [Repeating shifts and edit scopes](templates.md).
 
 ## Cancel a shift
 
@@ -53,3 +53,10 @@ Open a shift and choose the **History** tab. It lists, in plain words and in ord
 
 !!! note "Workers can read the roster but not change it"
     People who are not administrators cannot add, change or cancel shifts. They see **My shifts** and a read-only **Full roster**.
+
+## Related pages
+
+- [Repeating shifts and edit scopes](templates.md)
+- [Coverage and open shifts](coverage.md)
+- [Appointments](appointments.md)
+- [Shift emails](emails.md)
