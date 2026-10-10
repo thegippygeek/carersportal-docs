@@ -40,12 +40,6 @@ theme:
     - content.action.edit
     - content.code.copy
 
-# Drafts: kept in the repo and visible under `mkdocs serve`, but left out of
-# the published site. Move a page out of here (and back into nav) to publish.
-draft_docs: |
-  # Rostering is not live yet.
-  guides/roster.md
-
 nav:
   - Home: index.md
   - Getting started:
@@ -58,6 +52,8 @@ nav:
       - Log fluids, meals and bowel health: guides/daily-records.md
       - Record a therapy session: guides/therapy.md
       - Add the portal to my phone's home screen: guides/home-screen.md
+  - Roster:
+      - Plan the roster: roster/planning.md
   - For administrators:
       - Invite a team member: admin/invite.md
       - Roles and what they can see: admin/roles.md
