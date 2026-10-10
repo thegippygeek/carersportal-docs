@@ -6,7 +6,7 @@ Linking is your choice. The portal never links a note for you.
 
 ## Link a note
 
-1. Choose **Shift notes**, then **New shift note**, as usual.
+1. Choose **Shift Notes**, then **New Shift Note**, as usual.
 2. Pick the **date** and the start time.
 3. Find the **Rostered shift** field. It lists your own shifts around that date and time.
 4. Choose the shift you worked, or leave it as **Not linked**.
