@@ -5,6 +5,7 @@ The **Try the demo** button on the home page opens a complete, working portal fo
 - No account or password needed.
 - You can add, edit and delete records — everything you do stays in the demo.
 - The demo resets itself every night, so it is always tidy in the morning.
+- The demo includes a sample roster, from two weeks back to four weeks ahead, with an open shift, a cancelled shift and a gap in coverage to look at. Open **Roster** to try it. It resets every night with everything else. See [Plan the roster](../roster/planning.md).
 - You arrive as **Sarah**, a support worker. Use the persona switcher in the header to see the portal as an administrator or as a read-only viewer.
 
 !!! info "What the demo will not let you do"
