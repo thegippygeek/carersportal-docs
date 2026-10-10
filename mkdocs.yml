@@ -42,6 +42,7 @@ theme:
 
 nav:
   - Home: index.md
+  - What's new: whats-new.md
   - Getting started:
       - Sign in: account/sign-in.md
       - Access is pending?: account/access-pending.md
