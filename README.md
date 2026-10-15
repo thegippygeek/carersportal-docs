@@ -1,6 +1,6 @@
 # Carers Portal — help site and public issue tracker
 
-Source for **https://docs.carersportal.me** (MkDocs Material → GitHub Pages) and the public place to [report a bug](https://github.com/thegippygeek/carersportal-docs/issues/new/choose) or ask a question in [Discussions](https://github.com/thegippygeek/carersportal-docs/discussions).
+Source for **https://docs.carersportal.me** (MkDocs Material → GitHub Pages) and the public place to ask a question, report a problem or suggest an improvement in [Discussions](https://github.com/thegippygeek/carersportal-docs/discussions).
 
 The application itself lives in a private repository; this one holds only documentation and community intake.
 
