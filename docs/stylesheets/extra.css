@@ -116,6 +116,10 @@
 [data-md-color-scheme="slate"] .md-logo img.cp-logo--light { display: none; }
 [data-md-color-scheme="slate"] .md-logo img.cp-logo--dark { display: block; }
 
+/* Home-page banner linking to the app (docs/index.md, `{ .cp-hero }`). */
+.cp-hero { display: block; text-align: center; }
+.cp-hero img { border-radius: 0.5rem; }
+
 /* Primary buttons: burgundy fill, cream text — one per view (guide §5).
    (The landing CTA-on-dark treatment is ochre-on-ink; in the docs the
    primary action sits on cream, so burgundy fill is the correct variant.) */

@@ -1,5 +1,7 @@
 # Carers Portal Help
 
+[![Carers Portal — open carersportal.me](assets/og-image.png){ width="400" }](https://carersportal.me){ .cp-hero }
+
 Short, practical answers for the people who use [Carers Portal](https://carersportal.me): participants, the family and nominees around them, support workers, and the administrators who run a care team.
 
 <div class="grid cards" markdown>
@@ -24,7 +26,7 @@ Short, practical answers for the people who use [Carers Portal](https://carerspo
 
 -   :material-lifebuoy: **Something wrong?**
 
-    Report a bug or suggest an improvement — no account needed.
+    Ask a question, report a problem or suggest an improvement in our community Discussions.
 
     [:octicons-arrow-right-24: Get help](support/report-a-problem.md)
 

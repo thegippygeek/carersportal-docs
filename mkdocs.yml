@@ -91,6 +91,10 @@ extra_css:
   - stylesheets/extra.css
 
 extra:
+  # The header and drawer logo link here (Material's partials read
+  # extra.homepage) instead of the docs home page; "Home" in the nav still
+  # reaches the docs index.
+  homepage: https://carersportal.me
   social:
     - icon: material/web
       link: https://carersportal.me
