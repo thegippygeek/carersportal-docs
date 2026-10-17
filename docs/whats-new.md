@@ -2,6 +2,35 @@
 
 What's changed in Carers Portal, newest first.
 
+## v2.8.2 — Our Story (October 2026)
+
+- **Our Story.** A new page explains why Carers Portal was built. It has a button to start your free trial and shows current pricing.
+
+## v2.8.1 (October 2026)
+
+- After an update, the portal now loads its latest settings straight away. Previously a browser could keep old settings, so pricing and sign-in could be missing until you refreshed the page.
+
+## v2.8.0 — Roster changes for sickness and hand-overs (October 2026)
+
+Changes to a roster when someone is sick, or when a shift changes hands part way through.
+
+- **Shifts that have started.** A shift is now planned, in progress or finished. If you change the worker on a shift that has already started, you give a reason, which only administrators see.
+- **Split a shift at a hand-over.** Administrators can split a shift in progress at the time of a hand-over. Each part shows who worked it, and the worker who finishes early is emailed.
+- **Correct a finished shift.** Administrators can fix the times or workers on a finished shift, with a reason. The original values stay in the shift's history, and nobody is emailed.
+- **Urgent emails for live changes.** When a swap happens on a shift that is under way, or starts within 24 hours, both workers are emailed with an **Urgent** subject.
+- **Call for cover.** From the roster toolbar, administrators can email a call for cover of open shifts to chosen members, with an optional message. You see a preview first, and you are asked before the same shift is called twice.
+
+## v2.7.0 — Reports, PEG Feed and a new side menu (October 2026)
+
+- **Side menu.** The dashboard has a side menu with grouped sections. On a phone it opens as a drawer. The menu can be collapsed to a row of icons, and each section has its own address, so you can bookmark it or go back to it.
+- **PEG Feed chart.** A chart for PEG feeds in Analytics, which administrators can switch on or off for their organisation. Its icon is now a drip bag.
+- **Bowel diary switch.** Administrators can switch the bowel diary on or off for their organisation. When it is off, the diary is hidden everywhere, and the records you already have are kept.
+- **Quick-win reports and export.** Reports and exports have been expanded.
+- **Easier navigation.** You can switch organisation from your profile menu. The theme toggle is on every screen. Help and What's new are in the side menu.
+- **Date ranges.** One date-range dropdown replaces the row of quick-range buttons.
+- **Analytics.** Summary cards and Key Insights appear on Overview, with clearer labels.
+- **What's new dot.** A dot on What's new shows when there is a new release.
+
 ## v2.6.0 — Native Roster (October 2026)
 
 Carers Portal now has its own roster, so you can plan who is working with the participant, and when, in the same place you keep shift notes.
