@@ -2,6 +2,10 @@
 
 What's changed in Carers Portal, newest first.
 
+## v2.9.1 (October 2026)
+
+- **Fluid totals when the PEG feed chart is off.** If your organisation switches the PEG feed chart off, the fluid report, the Overview and the printed evidence summary now show oral fluid only. PEG water no longer appears and does not count towards the daily total. Your PEG entries are kept, and switching the chart back on counts them again.
+
 ## v2.9.0 — PEG Feed in Analytics (October 2026)
 
 For organisations that have the PEG feed chart switched on.
