@@ -2,6 +2,15 @@
 
 What's changed in Carers Portal, newest first.
 
+## v2.9.0 — PEG Feed in Analytics (October 2026)
+
+For organisations that have the PEG feed chart switched on.
+
+- **PEG Feed page.** A new page in Analytics shows daily formula and water totals, the days with nothing recorded, and which formulas were given.
+- **Formula target.** Administrators can set an optional daily formula target in **Admin → Organisation**, beside the PEG feed switch. The PEG Feed chart shows it as a line.
+- **PEG water counts towards fluids.** The fluid report and the printed evidence summary now add water flushes and water given with medication to the drinks recorded in shift notes. A participant fed by PEG no longer shows as below their fluid target when they are not.
+- **Appetite card.** For a participant fed by PEG who has no appetite ratings, Nutrition & fluids now says **Not applicable: nutrition by PEG** and links to the PEG Feed page.
+
 ## v2.8.2 — Our Story (October 2026)
 
 - **Our Story.** A new page explains why Carers Portal was built. It has a button to start your free trial and shows current pricing.
