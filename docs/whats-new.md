@@ -2,6 +2,16 @@
 
 What's changed in Carers Portal, newest first.
 
+## v2.10.0 — Several workers at one appointment (October 2026)
+
+Appointments can now have more than one attending worker.
+
+- **Several attending workers.** When you add or change an appointment, or a repeating appointment, tick every worker who attends, or none. Each attending worker sees the appointment in **My shifts**.
+- **The admin note.** Every attending worker can see an appointment's admin note, along with administrators.
+- **Suspending a member.** Making a member inactive takes them off future appointments and off the default workers of repeating appointments. You see which before you confirm. Appointments that have started or are in the past keep them.
+- **Double-booking warning.** If a worker you choose already attends an overlapping appointment, you see a warning. It never stops you saving.
+- **Still no email.** Appointments do not send emails, and they do not appear in the personal calendar feed.
+
 ## v2.9.1 (October 2026)
 
 - **Fluid totals when the PEG feed chart is off.** If your organisation switches the PEG feed chart off, the fluid report, the Overview and the printed evidence summary now show oral fluid only. PEG water no longer appears and does not count towards the daily total. Your PEG entries are kept, and switching the chart back on counts them again.
